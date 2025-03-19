@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Room Designer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-brand">Room Designer</div>
+    <ul class="navbar-links">
+      <li><button onclick="scrollToSection('room-designer')">Room Designer</button></li>
+      <li><button onclick="scrollToSection('furniture-gallery')">Furniture Gallery</button></li>
+    </ul>
+  </nav>
+
+  <!-- Room Designer Section -->
+  <section id="room-designer" class="room-designer">
+    <h2>Room Designer</h2>
+    <div class="designer-container">
+      <div id="room-layout" class="room-layout"></div>
+      <div id="furniture-gallery" class="furniture-gallery">
+        <h3>Furniture Gallery</h3>
+        <div class="gallery-items">
+
+          <div class="furniture-item" draggable="true" data-type="chair">
+            <img src="http://www.pngmart.com/files/7/Chair-PNG-Free-Download.png" alt="Chair" class="furniture-image">
+          </div>
+
+          <div class="furniture-item" draggable="true" data-type="sofa">
+            <img src="https://static.vecteezy.com/system/resources/previews/053/016/419/non_2x/photo-of-sofa-transparent-background-isolated-free-png.png" alt="Sofa" class="furniture-image">
+          </div>
+
+          <div class="furniture-item" draggable="true" data-type="table">
+            <img src="https://static.vecteezy.com/system/resources/previews/011/704/798/original/oak-table-cut-out-transparent-background-png.png" alt="Table" class="furniture-image">
+          </div>
+          
+          <div class="furniture-item" draggable="true" data-type="Lamp">
+            <img src="http://www.pngmart.com/files/6/Fancy-Lamp-Transparent-Background.png" alt="Lamp" class="furniture-image">
+          </div>
+
+          <div class="furniture-item" draggable="true" data-type="Bed">
+            <img src="https://www.freepnglogos.com/uploads/bed-png/buy-leia-gas-lift-king-size-bed-frame-online-australia-12.png" alt="Bed" class="furniture-image">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
